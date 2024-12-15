@@ -20,7 +20,13 @@ h4 {
 	display: flex;
 	align-items: center;
 	justify-content: end;
+
+	a {
+		color: #212529;
+		text-decoration: none;
+	}
 }
+
 
 .top__box {
 	display: flex;
