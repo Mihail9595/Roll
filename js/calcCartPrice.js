@@ -2,7 +2,7 @@
 function calcCartPriceAndDelivery() {
     // const cartWrapper = document.querySelector('.cart-wrapper');
     const cartItems = document.querySelectorAll('.cart-item');
-    const totalPriceEl = document.querySelector('.total-price');
+    const totalPriceEl = document.querySelectorAll('[data-price]');
     const deliveryCost = document.querySelector('.delivery-cost');
     const cartDelivery = document.querySelector('[data-cart-delivery]');
 
@@ -19,7 +19,9 @@ function calcCartPriceAndDelivery() {
     });
 
     //Отображаем цену на странице
-    totalPriceEl.innerText = totalPrice;
+    totalPriceEl.forEach(function(item) {
+        item.innerText = totalPrice;
+    })
 
     if (totalPrice > 0) {
         cartDelivery.classList.remove('none');

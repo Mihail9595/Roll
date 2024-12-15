@@ -4,6 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/hit/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/hit/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/hit/favicon-16x16.png">
+	<link rel="manifest" href="img/hit/site.webmanifest">
+
 	<title>Магазин роллов</title>
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -13,6 +19,19 @@
 </head>
 
 <body>
+
+	<div class="top">
+		<div class="top__box">
+			<img src="./img/icons/1.svg" width="150" height="50" loading="lazy" alt="">
+
+			<p class="top__item">
+				<span class="">Итого:</span> 
+				<span class="" data-price>0</span> 
+				<span class="">₽</span>
+			</p>
+
+		</div>
+	</div>
 
 	<header class="header">
 		<div class="container text-center">
@@ -35,8 +54,8 @@
 								<h4 class="item-title">Филадельфия хит ролл</h4>
 								<p><small data-items-in-box class="text-muted">6 шт.</small></p> -->
 
-								<!-- Счетчик -->
-								<!-- <div class="details-wrapper">
+					<!-- Счетчик -->
+					<!-- <div class="details-wrapper">
 									<div class="items counter-wrapper">
 										<div class="items__control" data-action="minus">-</div>
 										<div class="items__current" data-counter>1</div>
@@ -171,8 +190,8 @@
 											<div class="cart-item__title">Калифорния темпура</div>
 											<div class="cart-item__weight">6 шт. / 205г.</div> -->
 
-											<!-- cart-item__details -->
-											<!-- <div class="cart-item__details">
+								<!-- cart-item__details -->
+								<!-- <div class="cart-item__details">
 
 												<div class="items items--small counter-wrapper">
 													<div class="items__control" data-action="minus">-</div>
@@ -185,8 +204,8 @@
 												</div>
 
 											</div> -->
-											<!-- // cart-item__details -->
-<!-- 
+								<!-- // cart-item__details -->
+								<!-- 
 										</div>
 									</div>
 								</div> -->
@@ -198,11 +217,11 @@
 							<!-- Стоимость заказа -->
 							<div class="cart-total">
 								<p data-cart-delivery class="none">
-									<span class="h5">Доставка:</span> 
+									<span class="h5">Доставка:</span>
 									<span class="delivery-cost">250 ₽</span> <br>
 									<span class="small">Бесплатно при заказе от 600 ₽</span>
 								</p>
-								<p><span class="h5">Итого:</span> <span class="total-price">0</span> <span
+								<p><span class="h5">Итого:</span> <span class="total-price" data-price>0</span> <span
 										class="rouble">₽</span></p>
 							</div>
 							<!-- // Стоимость заказа -->
@@ -232,7 +251,7 @@
 	<!-- Подключаем скрипты -->
 	<script src="./js/renderProducts.js"></script>
 	<script src="./js/calcCartPrice.js"></script>
-	 <script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
 	<script src="./js/counter.js"></script>
 	<script src="./js/cart.js"></script>
 </body>
